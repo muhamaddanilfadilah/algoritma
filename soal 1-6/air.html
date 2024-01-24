@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menentukan pintu air</title>
+</head>
+<body>
+    <script>
+      
+      let tinggiair = 500;
+    let status ;
+
+    if(tinggiair <= 500){
+        status = "status aman";
+    } else if (tinggiair <= 600){
+        status = "status waspada";
+    } else if (tinggiair <= 650){
+        status = "status siaga 2";
+    } else if (tinggiair > 650){
+        status = "status siaga 1";
+    } else {
+        status = "selesai"
+    }
+    
+    console.log(tinggiair)
+    console.log(status)
+    </script>
+</body>
+</html>
